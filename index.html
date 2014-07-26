@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products">
+  <meta name="author" content="Anand">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products</h1>
+    <h2></h2>
+    <p>Anand<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Assignment</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Part of the Data Science - Develop Data Products Course.</li>
+<li>Developed a Shiny application and deployed into the Shiny Apps io server. </li>
+<li><a href="http://asampath1.shinyapps.io/ShinyApps-Project">Shiny Apps IO Link</a></li>
+<li>ui.R and server.R files corresponding to the Shiny applications are deployed in  the github repository</li>
+<li><a href="https://github.com/asampath1/ShinyApps-Project.git">Github Repository Link</a></li>
+<li>Application has one side Panel and a 3 tabs in the main panel</li>
+<li>First Tab is a Writeup  tab acts as a documentation place holder which describes briefly about the project</li>
+<li>Second Tab is a Dataset summary that will display the results of the data set</li>
+<li>Third Tab is a Prediction  tab that displays a small prediction example</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>DataSet Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>In this application mtcars and iris dataset examples are taken.</li>
+<li>A SidePanel with controls to select a dataset, and no. of records to be fetched are used</li>
+<li>Users can select one of the dataset and the number of records to be fetched ie n number of head/tail records.
+(for this slider)</li>
+<li>As per the selection, the DataSet Summary tab will display the results. </li>
+<li>for example, A user selects &quot;iris&quot; dataset and no of records = 5, displays the following</li>
+</ol>
+
+<pre><code>##   Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1          5.1         3.5          1.4         0.2  setosa
+## 2          4.9         3.0          1.4         0.2  setosa
+## 3          4.7         3.2          1.3         0.2  setosa
+## 4          4.6         3.1          1.5         0.2  setosa
+## 5          5.0         3.6          1.4         0.2  setosa
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Prediction Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>In this application prediction of water consumption for a person is calculated based on the temperature and mowing time.</li>
+<li>A Sidebar with controls to select a temperature, and no. of mowing time in hours are used.</li>
+<li>As per the selection, the Prediction Summary tab will display the results.</li>
+</ol>
+
+<p>For example, if the temperature were 90 degrees Fahrenheit and someone mowed for one and a half hours 
+how much water would you estimate that they would want to drink during three hours outside?&#39;</p>
+
+<p>Once we have the Multiple regression equation, it is relatively straight forward to make predictions.</p>
+
+<p>In this example, the regression equation was given by Water = - 122 + 1.51*Temperature + 12.5*Mowing Time
+Now when we set temperature to 90 degrees and mowing for 1.5 hours as given in the example. 
+Water= 32.65 oz. </p>
+
+<p>Thus we estimate that the person in the example would drink a little less than 33 ounces.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Thus in this class assignment, we have learnt following :</p>
+
+<ol>
+<li>Building and Deploying a Shiny Application.</li>
+<li>Use Slidify for making runtime presentations.</li>
+</ol>
+
+<p>Note: In this exercise, I have used
+1. Slidify
+2. Five pages
+3. Hosted on github or Rpubs
+4. Contains some embedded R code that gets run when slidifying the document i.e 1) one data set records and 2) A simple formula in the prediction sum. </p>
+
+<p>THANKS</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Assignment'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='DataSet Summary'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Prediction Summary'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
